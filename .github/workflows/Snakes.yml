@@ -16,7 +16,7 @@ jobs:
       - uses: Platane/snk@v2
         id: snake-img
         with:
-          github_user_name: lyuly
+          github_user_name: CodeGetters
         
           outputs: |
             dist/github-snake.svg
