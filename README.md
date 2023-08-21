@@ -17,7 +17,9 @@
 
 <br>
 
+<!---
 <img align="center" src="https://raw.githubusercontent.com/lyuly/lyuly/gh-pages/github-snake.svg"/>
+--->
 
 <p>
   <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?logo=npm&logoColor=white" />
