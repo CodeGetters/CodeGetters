@@ -1,32 +1,32 @@
-name: Snakes
+# name: Snakes
 
-on:
-  schedule:
-    - cron: "0 */24 * * *"
+# on:
+#   schedule:
+#     - cron: "0 */24 * * *"
 
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
     
-    steps:
-      - uses: actions/checkout@v3
+#     steps:
+#       - uses: actions/checkout@v3
       
-      - uses: Platane/snk@v2
-        id: snake-img
-        with:
-          github_user_name: CodeGetters
+#       - uses: Platane/snk@v2
+#         id: snake-img
+#         with:
+#           github_user_name: CodeGetters
         
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+#           outputs: |
+#             dist/github-snake.svg
+#             dist/github-snake-dark.svg?palette=github-dark
+#             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
       
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
-        if: success() && github.ref == 'refs/heads/main'
-        with:
-          target_branch: gh-pages
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - uses: crazy-max/ghaction-github-pages@v3.1.0
+#         if: success() && github.ref == 'refs/heads/main'
+#         with:
+#           target_branch: gh-pages
+#           build_dir: dist
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
